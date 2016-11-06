@@ -1,0 +1,73 @@
+@import "./../../scss/variables.scss";
+
+.station-detail {
+  font-weight: 700;
+  font-family: $font-narrow;
+  padding: 6px 10px;
+  height: 100%;
+
+  > .title {
+    -webkit-flex: 0 0 auto; /* Safari 6.1+ */
+        -ms-flex: 0 0 auto; /* IE 10 */
+            flex: 0 0 auto;
+
+    display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;              /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;           /* TWEENER - IE 10 */
+    display: -webkit-flex;          /* NEW - Chrome */
+    display: flex;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+    -webkit-flex-direction: row;    /* Safari 6.1+ */
+            flex-direction: row;    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+    font-size: $font-medium-large;
+
+    > button {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      border-radius: 2px;
+
+      color: $white;
+      font-family: $font-narrow;
+      font-weight: 700;
+      font-size: $font-small;
+
+      padding: 1px 6px 3px 6px;
+      margin-left: 8px;
+
+      &.orange {
+        background-color: #f0ad4e;
+        &:hover {
+          background-color: #eb9316;
+        }
+      }
+
+      &.green {
+        background-color: #5cb85c;
+        &:hover {
+          background-color: #449d44;
+        }
+      }
+
+      &.red {
+        background-color: #d9534f;
+        &:hover {
+          background-color: #c9302c;
+        }
+      }
+    }
+  }
+
+  > .body {
+    margin: 8px 0;
+    height: calc(100% - 30px);
+    overflow-y: scroll;
+
+    > .split {
+      margin: 16px 0 8px 0;
+      border-top: 1px solid $black;
+    }
+  }
+
+}

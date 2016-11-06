@@ -1,0 +1,8 @@
+$portrait-max-width: 768px;
+
+@mixin respond-to($media) {
+  @if $media == portrait {
+    @media only screen and (max-device-aspect-ratio: 1/1) { @content; }
+    @media only screen and (max-width: $portrait-max-width) { @content; }
+  }
+}

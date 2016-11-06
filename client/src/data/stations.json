@@ -1,0 +1,85 @@
+{
+  "stations": [
+    {
+      "id": 1,
+      "address": "41 North Avenue Northwest",
+      "inside": false,
+      "coord": {
+        "x": 33.771238,
+        "y": -84.388842
+      }
+    },{
+      "id": 2,
+      "address": "61 U.S. 278",
+      "inside": false,
+      "coord": {
+        "x": 33.771244,
+        "y": -84.389074
+      }
+    },{
+      "id": 3,
+      "address": "78 North Avenue Northwest",
+      "inside": false,
+      "coord": {
+        "x": 33.771251,
+        "y": -84.389502
+      }
+    },{
+      "id": 4,
+      "address": "25 North Avenue Northwest",
+      "inside": false,
+      "coord": {
+        "x": 33.771229,
+        "y": -84.388263
+      }
+    },{
+      "id": 5,
+      "address": "Central parking system, 84 Spring Street Northwest",
+      "inside": false,
+      "coord": {
+        "x": 33.771552,
+        "y": -84.388845
+      }
+    },{
+      "id": 6,
+      "address": "588 Spring Street Northwest",
+      "inside": false,
+      "coord": {
+        "x": 33.770845,
+        "y": -84.388854
+      }
+    },{
+      "id": 7,
+      "address": "615 Spring Street Northwest",
+      "inside": true,
+      "coord": {
+        "x": 33.771398,
+        "y": -84.388709
+      }
+    },{
+      "id": 8,
+      "address": "61 U.S. 278",
+      "inside": true,
+      "coord": {
+        "x": 33.771405,
+        "y": -84.389308
+      }
+    },{
+      "id": 9,
+      "address": "600 Spring Street Northwest",
+      "inside": true,
+      "coord": {
+        "x": 33.770904,
+        "y": -84.389411
+      }
+    },{
+      "id": 10,
+      "address": "2-38 North Avenue Northwest",
+      "inside": false,
+      "coord": {
+        "x": 33.771231,
+        "y": -84.388539
+      }
+    }
+  ]
+}

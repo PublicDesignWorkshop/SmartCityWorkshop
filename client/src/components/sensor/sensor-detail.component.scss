@@ -1,0 +1,17 @@
+@import "./../../scss/variables.scss";
+
+.sensor-detail {
+  margin: 4px;
+  width: calc(100% - 8px);
+  height: 160px;
+
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  > .title {
+    padding: 2px 4px;
+    text-transform: uppercase;
+  }
+}

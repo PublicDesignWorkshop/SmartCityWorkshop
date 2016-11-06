@@ -1,0 +1,52 @@
+@import "./../../scss/variables.scss";
+
+.snapshot-summary {
+  font-weight: 700;
+  font-family: $font-narrow;
+  padding: 4px 8px;
+  border-radius: 2px;
+  margin: 2px;
+
+  display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;              /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;           /* TWEENER - IE 10 */
+  display: -webkit-flex;          /* NEW - Chrome */
+  display: flex;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+  -webkit-flex-direction: row;    /* Safari 6.1+ */
+          flex-direction: row;    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  > .sensors {
+    display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;              /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;           /* TWEENER - IE 10 */
+    display: -webkit-flex;          /* NEW - Chrome */
+    display: flex;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+    -webkit-flex-direction: row;    /* Safari 6.1+ */
+            flex-direction: row;    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+            flex-wrap: wrap;
+
+    margin: 0 4px;
+    > .thumbnail {
+      font-size: $font-small;
+      color: $white;
+      padding: 1px 5px 0 5px;
+      border-radius: 1px;
+
+      &:not(:last-child) {
+        margin-right: 4px;
+      }
+    }
+  }
+}

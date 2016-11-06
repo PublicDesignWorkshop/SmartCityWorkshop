@@ -1,0 +1,98 @@
+@import "./../../scss/variables.scss";
+
+.station-item {
+  font-weight: 700;
+  font-family: $font-narrow;
+  padding: 4px 8px;
+  border-radius: 2px;
+  margin: 2px;
+
+  display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;              /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;           /* TWEENER - IE 10 */
+  display: -webkit-flex;          /* NEW - Chrome */
+  display: flex;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+  -webkit-flex-direction: row;    /* Safari 6.1+ */
+          flex-direction: row;    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &.select {
+    color: $white;
+    background-color: $darkgrey;
+  }
+
+  > .name {
+    display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;              /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;           /* TWEENER - IE 10 */
+    display: -webkit-flex;          /* NEW - Chrome */
+    display: flex;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+    -webkit-flex-direction: row;    /* Safari 6.1+ */
+            flex-direction: row;    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+    -webkit-flex-grow: 1;
+            flex-grow: 1;
+
+    > .status {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      border-radius: 2px;
+
+      color: $white;
+      font-family: $font-narrow;
+      font-weight: 700;
+      font-size: $font-small;
+
+      padding: 1px 4px;
+      margin: 0 4px;
+
+      &.orange {
+        background-color: #f0ad4e;
+        &:hover {
+          background-color: #eb9316;
+        }
+      }
+
+      &.green {
+        background-color: #5cb85c;
+        &:hover {
+          background-color: #449d44;
+        }
+      }
+    }
+  }
+
+  > .group {
+    display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;              /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;           /* TWEENER - IE 10 */
+    display: -webkit-flex;          /* NEW - Chrome */
+    display: flex;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+    -webkit-flex-direction: row;    /* Safari 6.1+ */
+            flex-direction: row;    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+    > div {
+      font-weight: 700;
+      font-family: $font-narrow;
+      font-size: $font-small;
+
+      &:hover {
+        text-decoration: underline;
+      }
+      &:not(:last-child) {
+        margin-right: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "./../../scss/variables.scss";
+
+.sensor-snapshot {
+  margin: 4px;
+  width: calc(100% - 8px);
+  height: 120px;
+
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  > .title {
+    margin-bottom: 2px;
+    text-transform: uppercase;
+  }
+}

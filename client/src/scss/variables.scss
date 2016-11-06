@@ -1,0 +1,38 @@
+
+$white: rgba(255, 255, 255, 1);
+$black: rgba(0, 0, 0, 1);
+$darkgrey: #231f20;
+
+$font-normal: 'Open Sans', sans-serif;
+$font-narrow: 'Open Sans Condensed', sans-serif;
+
+$font-x-large: 2em;
+$font-large: 1.5em;
+$font-medium-large: 1.25em;
+$font-medium: 1em;
+$font-small: 0.85em;
+$font-x-small: 0.5em;
+
+$header-height: 48px;
+$header-background-color: #231f20;
+$overlay-slide-animation-duration: 0s;
+
+@keyframes wave1 {
+  0% {
+    opacity: 0.5;
+  }
+  80% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+@keyframes wave2 {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
